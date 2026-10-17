@@ -1,0 +1,24 @@
+Environment: Playground. Goal: model a student with constants for values that never change and variables for values that do.
+Steps
+1. Create a constant studentName set to your name and a constant rollNumber with an explicit Int annotation.
+2. Create variables semester (an Int) and cgpa (a Double with an explicit annotation) and a constant isHosteller (a Bool).
+3. Print a single line using string interpolation: Name: Asha, Roll: 2301, Semester: 5.
+4. Move to the next semester with semester += 1 and update cgpa, then print a second line.
+5. Try to change studentName. Read the error, then comment the line out.
+6. Print type(of:) for each value and confirm that Swift inferred the types you expected.
+
+
+# Code
+let studentName = "Priya"
+let rollNumber : Int = 120
+var semester : Int = 7
+var cgpa : Double = 9.0
+let isHosteller : Bool = true
+print("Name : \(studentName), Roll: \(rollNumber), Semester: \(semester)")
+semester+=1
+cgpa = 9.1
+print(type(of: studentName))
+print(type(of: rollNumber))
+print(type(of: semester))
+print(type(of: cgpa))
+print(type(of: isHosteller))
